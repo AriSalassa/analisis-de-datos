@@ -19,7 +19,7 @@ def display_dataset_bar_value_count(dataset):
 
     # Número de columnas en la imagen
     plot_columns = 3
-    plot_rows = n_columns/plot_columns if n_columns%plot_columns == 0 else int(n_columns/plot_columns) + 1
+    plot_rows = int(n_columns/plot_columns) if n_columns%plot_columns == 0 else int(n_columns/plot_columns) + 1
     
 
     fig, ax = plt.subplots(plot_rows, plot_columns, figsize=(12,12))
